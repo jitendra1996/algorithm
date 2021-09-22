@@ -1,3 +1,5 @@
+const charCount = require('./charCountInString');
+
 const validAnagram = (first, second) => {
     if (first.length !== second.length) {
         return false;
@@ -27,21 +29,21 @@ const validAnagram = (first, second) => {
 }
 
 
-const charCount = str => {
-    let strLower = str.toLowerCase();
-    let obj = {};
-    let specialChar = /^[a-z]+$/;
-    for (let i = 0; i < strLower.length; i++) {
-        if (obj[strLower[i]] > 0) {
-            obj[strLower[i]]++;
-        } else {
-            if (specialChar.test(strLower[i])) {
-                obj[strLower[i]] = 1;
-            }
-        }
-    }
-    return obj;
-}
+// const charCount = str => {
+//     let strLower = str.toLowerCase();
+//     let obj = {};
+//     let specialChar = /^[a-z]+$/;
+//     for (let i = 0; i < strLower.length; i++) {
+//         if (obj[strLower[i]] > 0) {
+//             obj[strLower[i]]++;
+//         } else {
+//             if (specialChar.test(strLower[i])) {
+//                 obj[strLower[i]] = 1;
+//             }
+//         }
+//     }
+//     return obj;
+// }
 
 
 //console.log(charCount('asjdjaaasdjkjdej'));

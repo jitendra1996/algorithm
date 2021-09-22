@@ -13,7 +13,6 @@ const shiftLetter = (str , arr) => {
     return strCodeArr.map(el => String.fromCharCode(el)).join('');
 }
 
-const arg = process.argv;
 
 const result = shiftLetter(arg[2],arg[3]);
 console.log(result);

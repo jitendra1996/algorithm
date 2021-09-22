@@ -16,4 +16,6 @@ const charCount = str => {
     }
 
 
-console.log(charCount(word));
+//console.log(charCount(word));
+
+module.exports = charCount;
